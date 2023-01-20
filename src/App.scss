@@ -1,19 +1,48 @@
-@import '../node_modules/bootstrap/scss/bootstrap';
-@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap');
-
-// *:not(path):not(g) {
-//   color: hsla(210, 100%, 100%, 0.9) !important;
-//   background: hsla(210, 100%, 50%, 0.5) !important;
-//   outline: solid 0.25rem hsla(210, 100%, 100%, 0.5) !important;
-
-//   box-shadow: none !important;
-// }
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;1,100&display=swap");
 
 body {
-  // background-color: #222733;
   color: #dbe8d4;
-  font-family: 'Josefin Sans';
+  font-family: "Josefin Sans";
   background-image: linear-gradient(#222733, #2f394e);
+  margin: 0;
+  font-family: "Josefin Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+  border-radius: 2%;
+  @media (max-width: 500px) {
+    max-width: 70%;
+  }
+}
+
+h2 {
+  font-weight: bold;
+  font-style: italic;
+  font-size: 2rem;
+}
+
+h2,
+h3 {
+  margin-top: 10vh;
+}
+
+h3 {
+  font-weight: bold;
+  margin-bottom: 10vh;
+}
+
+h3::after {
+  content: "";
+  display: block;
+  bottom: 0;
+  width: 14rem;
+  height: 4px;
+  background-color: #525e65;
+  margin-top: 5vh;
 }
 
 nav {
@@ -30,9 +59,11 @@ nav {
     margin: auto 15px;
     padding: inherit;
     height: 100%;
-    width: auto;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     cursor: pointer;
+    @media (max-width: 500px) {
+      font-size: 1.1rem;
+    }
   }
   a:hover {
     color: #73cca8;
@@ -47,17 +78,21 @@ header {
   h1 {
     font-weight: 100;
     font-size: 5rem;
+    font-style: italic;
+    font-weight: bold;
     margin-top: 12vh;
-    @media (max-width: 400px) {
-      font-size: 2rem;
+    overflow-wrap: break-word;
+    @media (max-width: 500px) {
+      font-size: 2.5rem;
     }
   }
+
   h2 {
     margin-top: 2vh;
     font-size: 1.2rem;
     font-weight: bold;
-    @media (max-width: 400px) {
-      font-size: 1rem;
+    @media (max-width: 500px) {
+      font-size: 0.9rem;
     }
   }
 }
@@ -70,24 +105,37 @@ p {
   font-weight: bold;
   font-size: 1.2rem;
   font-family: Titillium Web;
+  @media (max-width: 500px) {
+    width: 80%;
+  }
 }
 
-// .title {
-//   font-weight: 100;
-//   font-size: 4rem;className="image-me"
-//   margin-top: 3vh;
-// }
-
-// header {
-//   background-image: url(https://coryhughart.com/wp-content/themes/boldlygo/img/starwheel.svg?1418951467);
-//   border-radius: 80%;
-//   height: 50vh;
-//   margin-top: 10vh;
-// }
+footer {
+  margin-top: 10vh;
+  font-size: 2rem;
+  background-color: #2e3445;
+  padding: 2vh;
+  h2 {
+    height: auto;
+    margin-top: 0;
+  }
+  a {
+    text-decoration: none;
+    margin-right: 3vh;
+  }
+}
 
 .image-me {
   width: 10vw;
   margin-top: 7vh;
-  // transform: rotateY(0deg);
-  // cursor: pointer;
+  cursor: pointer;
+  @media (max-width: 500px) {
+    width: 30vw;
+  }
+}
+
+#formacao {
+  a {
+    color: #73cca8;
+  }
 }
