@@ -1,8 +1,13 @@
 export const Projeto = (props) => {
   return (
-    <div className="text-center">
+    <div className="text-center" id="#projeto">
       <div className="d-flex justify-content-center">
-        <h3>{props.nomeProjeto}</h3>
+        <a target="_blank" href={props.linkProjeto} rel="noreferrer">
+          <h3>
+            {props.nomeProjeto + " "}
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </h3>
+        </a>
       </div>
       <div className="d-flex justify-content-center">
         <a target="_blank" href={props.linkProjeto} rel="noreferrer">
@@ -12,9 +17,6 @@ export const Projeto = (props) => {
           />
         </a>
       </div>
-      {/* <div className="d-flex justify-content-center">
-        <p>{props.descricaoProjeto}</p>
-      </div> */}
     </div>
   );
 };

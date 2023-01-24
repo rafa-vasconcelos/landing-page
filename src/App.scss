@@ -19,6 +19,15 @@ img {
   }
 }
 
+a {
+  text-decoration: none;
+  color: #dbe8d4;
+}
+a:hover {
+  opacity: 0.6;
+  color: #dbe8d4;
+}
+
 h2 {
   font-weight: bold;
   font-style: italic;
@@ -54,15 +63,15 @@ nav {
   top: 0;
   a {
     text-decoration: none;
-    font-weight: 300;
     color: inherit;
     margin: auto 15px;
     padding: inherit;
     height: 100%;
-    font-size: 1.3rem;
+    font-size: 1.6rem;
     cursor: pointer;
     @media (max-width: 500px) {
-      font-size: 1.1rem;
+      font-size: 1.2rem;
+      font-weight: bold;
     }
   }
   a:hover {
@@ -100,13 +109,14 @@ header {
 p {
   width: 28rem;
   margin-top: 7vh;
-  line-height: 2;
+  line-height: 2.2;
   text-align: justify;
   font-weight: bold;
   font-size: 1.2rem;
   font-family: Titillium Web;
   @media (max-width: 500px) {
     width: 80%;
+    text-align: center;
   }
 }
 
