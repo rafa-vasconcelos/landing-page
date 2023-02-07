@@ -1,4 +1,4 @@
-import me from "../me.png";
+import me from "../me.webp";
 
 export default function Header() {
   return (

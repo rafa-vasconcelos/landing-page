@@ -3,27 +3,27 @@ export const dadosProjetos = {
     {
       nomeProjeto: "Quizzical",
       linkProjeto: "https://rafa-vasconcelos.github.io/quiz/",
-      imagemProjeto: "/quizzical.png",
+      imagemProjeto: "/quizzical.webp",
       descricaoProjeto: "Site de quiz de temas variados.",
     },
     {
       nomeProjeto: "Drum Machine",
       linkProjeto: "https://rafa-vasconcelos.github.io/drum-machine/",
-      imagemProjeto: "/drum-machine.png",
+      imagemProjeto: "/drum-machine.webp",
       descricaoProjeto:
         "Um aplicativo que simula um instrumento digital musical.",
     },
     {
       nomeProjeto: "Markdown Editor",
       linkProjeto: "https://rafa-vasconcelos.github.io/markdown-editor/",
-      imagemProjeto: "/markdown.png",
+      imagemProjeto: "/markdown.webp",
       descricaoProjeto: "Editor de Markdown Online.",
     },
 
     {
       nomeProjeto: "Pomodoro Clock",
       linkProjeto: "https://rafa-vasconcelos.github.io/pomodoro/",
-      imagemProjeto: "/pomodoro.png",
+      imagemProjeto: "/pomodoro.webp",
       descricaoProjeto: "Aplicativo de Timer da Ténica Pomodoro.",
     },
   ],
